@@ -30,7 +30,7 @@
 	//},
 
 	// Configure tool-specific properties.
-	"customizations": {
+	//"customizations": {
 		// Configure properties specific to VS Code.
 	//	"vscode": {
 	//		// Set *default* container specific settings.json values on container create.
@@ -47,5 +47,5 @@
 	//			"ms-toolsai.jupyter"
 	//		]
 	//	}
-	}
+	//}
 }
