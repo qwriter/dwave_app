@@ -8,44 +8,44 @@
 	"image": "docker.io/dwavesys/ocean-dev:latest",
 
 	// install repo requirements on create and content update
-	"updateContentCommand": "pip install -r requirements.txt"
+	"updateContentCommand": "pip install -r requirements.txt",
 
 	// forward/expose container services (relevant only when run locally)
-	//"forwardPorts": [
+	"forwardPorts": [
 		// dwave-inspector web app
-	//	18000, 18001, 18002, 18003, 18004,
+		18000, 18001, 18002, 18003, 18004,
 		// OAuth connect redirect URIs
-	//	36000, 36001, 36002, 36003, 36004
-	//],
+		36000, 36001, 36002, 36003, 36004
+	],
 
-	//"portsAttributes": {
-	//	"18000-18004": {
-	//		"label": "D-Wave Problem Inspector",
-	//		"requireLocalPort": true
-	//	},
-	//	"36000-36004": {
-	//		"label": "OAuth 2.0 authorization code redirect URI",
-	//		"requireLocalPort": true
-	//	}
-	//},
+	"portsAttributes": {
+		"18000-18004": {
+			"label": "D-Wave Problem Inspector",
+			"requireLocalPort": true
+		},
+		"36000-36004": {
+			"label": "OAuth 2.0 authorization code redirect URI",
+			"requireLocalPort": true
+		}
+	},
 
 	// Configure tool-specific properties.
-	//"customizations": {
+	"customizations": {
 		// Configure properties specific to VS Code.
-	//	"vscode": {
-	//		// Set *default* container specific settings.json values on container create.
-	//		"settings": {
-	//			"workbench": {
-	//				"editorAssociations": {
-	//					"*.md": "vscode.markdown.preview.editor"
-	//				},
-	//				"startupEditor": "readme"
-	//			}
-	//		},
-	//		"extensions": [
-	//			"ms-python.python",
-	//			"ms-toolsai.jupyter"
-	//		]
-	//	}
-	//}
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"workbench": {
+					"editorAssociations": {
+						"*.md": "vscode.markdown.preview.editor"
+					},
+					"startupEditor": "readme"
+				}
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter"
+			]
+		}
+	}
 }
